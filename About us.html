@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawFect Picks - About Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color:#333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .promo-bar {
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      color:#d60038;
+      border-bottom: 1px solid #eee;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: white;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.1);
+    }
+    .navbar .logo{
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar img.logo {
+      height: 50px;
+      width:auto;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      display: flex;
+      align-items: center;
+      gap:5px;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: #d60038;
+    }
+
+    .nav-links img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .search-box {
+      display: flex;
+      border: 2px solid #d60038;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 36px;
+    }
+
+    .search-box input {
+      border: none;
+      padding: 6px 10px;
+      outline: none;
+      width: 180px;
+    }
+
+    .search-box button {
+      background: #d60038;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-content {
+      display: flex;
+      padding: 60px 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: wrap;
+      margin: 0 auto;
+    }
+
+    .logo-large {
+      font-size: 48px;
+      color: #d60038;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-large img {
+      width: 120px;
+      height: auto;
+
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #1b3555;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .team-section {
+      background-color: #d60038;
+      padding: 50px 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .member {
+      background-color: white;
+      padding: 15px;
+      border-radius:10px;
+      width: 150px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .member:hover{
+      transform: translate(-5px);
+    }
+
+    .member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #d60038;
+    }
+
+    .footer {
+      background-color: #1b3555;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 30px;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-column{
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer h3{
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    .footer div {
+      margin: 10px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+    .footer li {
+      margin-bottom: 8px;
+    }
+
+    .footer a{
+         color: #ccc;
+         transition: color 0.3s;
+    }
+
+    .footer a: :hover {
+      color: white;
+    }
+    .social-icons img{
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      transition: opacity 0,3s;
+    }
+
+    .social-icons img:hover{
+      opacity: 1;
+    }
+    .copyright {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255,255,0.1);
+      font-size: 14px;
+      color: #aaa;
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+      }
+      
+      .nav-links {
+        justify-content: center;
+        gap: 15px;
+      }
+      
+      .search-box {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .search-box input {
+        width: 100%;
+      }
+      
+      .main-content {
+        padding: 40px 20px;
+        gap: 40px;
+      }
+      
+      .logo-large {
+        font-size: 36px;
+      }
+      
+      .about-text h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="promo-bar">Summer sale | use code: PETSUMMER</div>
+
+  <nav class="navbar">
+    <img src="1. icons used for website/Pawfect Picks.png" alt="pawfect-picks" class="logo">
+    <div class="nav">
+      <a href="#"><img src="1. icons used for website/home-icon.png">HOME</a>
+      <a href="#"><img src="1. icons used for website/store-icon.png">SHOP</a>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+      </div>
+      <a href="#"><img src="1. icons used for website/contact-us-icon.png"> CONTACT</a>
+      <a href="#"><img src="1. icons used for website/about-us-icon.png"> ABOUT US</a>
+      <a href="#"><img src="1. icons used for website/cart-icon.png">cart-icon</a>
+      <a href="#"><img src="1. icons used for website/profile-user-icon.png">profile-user-icon</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="logo-large">PawFect Picks 🐾<img src="1. icons used for website/Pawfect Picks.png"></div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Welcome to PawFect Picks, your one-stop shop for all your pet's needs. Founded in 2025, we started as a small local pet store with a passion for animals and have grown into a trusted online destination for pet lovers nationwide.</p>
+      <p>Our mission is simple: to provide high-quality, affordable products that keep your furry friends happy and healthy. We carefully select every item in our inventory, from nutritious foods to fun toys and stylish accessories. All our products are sourced from reputable manufacturers who share our commitment to animal welfare.</p>
+      <p>What sets us apart is our team of pet enthusiasts. Each of our staff members is a pet owner themselves, bringing personal experience and knowledge to help you make the best choices for your companion. We're not just sellers - we're a community of animal lovers here to support you through every stage of your pet's life.</p>
+      <p>At PawFect Picks, we believe pets are family. That's why we offer a 100% satisfaction guarantee on all our products. If you or your pet aren't completely happy, we'll make it right. Thank you for trusting us with your pet's needs - we're honored to be part of your pet parenting journey.</p>
+    </div>
+  </div>
+
+  <section class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-members">
+    <div class="member"><img src="1. icons used for website/man-profile-account-picture.png" alt="Team Member"></div>
+    <div class="member"><img src="1. icons used for website/man-profile-account-picture.png" alt="Team Member"></div>
+    <div class="member"><img src="1. icons used for website/man-profile-account-picture.png" alt="Team Member"></div>
+    <div class="member"><img src="1. icons used for website/man-profile-account-picture.png" alt="Team Member"></div>
+    <div class="member"><img src="1. icons used for website/man-profile-account-picture.png" alt="Team Member"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <p>FOLLOW US:</p>
+      <a href="#"><img src="1. icons used for website/facebook-icon.png"></a>
+      <a href="#"><img src="1. icons used for website/x-icon.png"></a>
+      <a href="#"><img src="1. icons used for website/instagram-icon.png"></a>
+    </div>
+    <div>
+      <p>SHOP NOW</p>
+      <ul>
+        <li>• For Dogs</li>
+        <li>• For Cats</li>
+      </ul>
+    </div>
+    <div>
+      <p>@Copyright</p>
+    </div>
+  </footer>
+</body>
+</html>
