@@ -1,0 +1,218 @@
+<div class="homepage-container">
+    <!-- Banner Section -->
+    <div class="banner-section">
+      <button class="banner-nav prev">❮</button>
+      
+      <div class="banner-content">
+        <div class="banner-text">
+          <h2 class="new-arrivals">New Arrivals!</h2>
+          <h1 class="banner-title">Comfy Beds</h1>
+          <div class="price-tag">
+            <span class="starting-at">STARTING AT</span>
+            <span class="price">3000</span>
+          </div>
+          <button class="buy-now">BUY NOW</button>
+        </div>
+        
+        <div class="banner-images">
+          <img src="New Arrivals.png" alt="Pet beds collection" class="beds-banner">
+        </div>
+      </div>
+      
+      <button class="banner-nav next">❯</button>
+    </div>
+    
+    <!-- Top Recommendations Section -->
+    <div class="top-recommendations">
+      <h2 class="section-title">Top Recommendation</h2>
+      
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cat toy 2.png" alt="Mini Teaser Wand Cat Toy">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Mini Teaser Wand Cat Toy</h3>
+          <p class="product-price">Rs 500</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pet food 2.png" alt="Kibble's'n Bites">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Kibble's'n Bites</h3>
+          <p class="product-price">Rs 1000</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cat toy 1.webp" alt="Boca Plush Mouse Cat Toy">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Boca Plush Mouse Cat Toy</h3>
+          <p class="product-price">Rs 250</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="dog toy.webp" alt="Toy Ball For Dogs">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Toy Ball For Dogs</h3>
+          <p class="product-price">200</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .homepage-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    
+    /* Banner Section */
+    .banner-section {
+      position: relative;
+      background-color: #4a90e2;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .banner-nav {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 10;
+      padding: 0 20px;
+    }
+    
+    .banner-content {
+      display: flex;
+      width: 100%;
+      padding: 0 50px;
+    }
+    
+    .banner-text {
+      flex: 1;
+      z-index: 5;
+    }
+    
+    .new-arrivals {
+      color: #ff3366;
+      font-family: cursive;
+      margin-bottom: 0;
+    }
+    
+    .banner-title {
+      font-size: 4rem;
+      color: black;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    
+    .price-tag {
+      background-color: white;
+      border-radius: 25px;
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 15px;
+      margin-bottom: 20px;
+    }
+    
+    .starting-at {
+      color: #ff3366;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
+    .price {
+      font-weight: bold;
+    }
+    
+    .buy-now {
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .banner-images {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .beds-banner {
+      max-width: 100%;
+      max-height: 300px;
+    }
+    
+    /* Top Recommendations Section */
+    .section-title {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .product-image {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    
+    .product-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .product-rating {
+      margin-bottom: 5px;
+      height: 25px;
+    }
+    
+    .rating-stars {
+      height: 20px;
+    }
+    
+    .product-title {
+      font-size: 1rem;
+      margin: 5px 0;
+    }
+    
+    .product-price {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>

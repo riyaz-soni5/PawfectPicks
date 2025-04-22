@@ -1,0 +1,179 @@
+<div class="recommendations-container">
+    <div class="category-tabs">
+      <a href="#" class="tab">Dog</a>
+      <a href="#" class="tab">Cat</a>
+      <a href="#" class="tab">Small Pet</a>
+      <a href="#" class="tab">Aquatic</a>
+      <a href="#" class="tab active">Recommendation</a>
+    </div>
+    
+    <div class="recommendation-section">
+      <h2 class="section-title">Recommendation for your pet</h2>
+      
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cat toy 2.png" alt="Mini Teaser Wand Cat Toy">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Mini Teaser Wand Cat Toy</h3>
+          <p class="product-price">Rs 500</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pet food 2.png" alt="Kibble's'n Bites">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Kibble's'n Bites</h3>
+          <p class="product-price">Rs 1000</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cat toy 1.webp" alt="Boca Plush Mouse Cat Toy">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Boca Plush Mouse Cat Toy</h3>
+          <p class="product-price">Rs 250</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="dog toy.webp" alt="Toy Ball For Dogs">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Toy Ball For Dogs</h3>
+          <p class="product-price">200</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="food 2.png" alt="Care+ Rabbit Food">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Care+ Rabbit Food</h3>
+          <p class="product-price">Rs 1200</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="food 3.png" alt="Guinea Pig Food">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Guinea Pig Food</h3>
+          <p class="product-price">Rs 800</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="aquarium decoration.webp" alt="Fish Gear Rock Hill Aquarium">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Fish Gear Rock Hill Aquarium</h3>
+          <p class="product-price">Rs 500</p>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pet cage.png" alt="Small pet cage">
+          </div>
+          <div class="product-rating">
+            <img src="ratings.webp" alt="Five Stars" class="rating-stars">
+          </div>
+          <h3 class="product-title">Small pet cage</h3>
+          <p class="product-price">650</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .recommendations-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    
+    .category-tabs {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+    
+    .tab {
+      padding: 15px 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .tab.active {
+      background-color: #eaeef4;
+      border-radius: 5px 5px 0 0;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .product-image {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    
+    .product-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .product-rating {
+      margin-bottom: 5px;
+      height: 25px;
+    }
+    
+    .rating-stars {
+      height: 20px;
+    }
+    
+    .product-title {
+      font-size: 1rem;
+      margin: 5px 0;
+    }
+    
+    .product-price {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
