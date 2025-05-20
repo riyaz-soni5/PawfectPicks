@@ -4,13 +4,13 @@
 /* SIDEBAR */
 .admin-sidenav {
     grid-area: sidebar;
-    background-color: #f44369;
+    background-color: #2A5A8A;
     padding-top: 20px;
     height: 100%;
     overflow-y: auto;
     color: #fff;
-    display: flex;          /* Enables flexbox for centering */
-    flex-direction: column; /* Stacks items vertically */
+    display: flex;          
+    flex-direction: column; 
 
 }
 
@@ -19,7 +19,7 @@
     padding: 0;
     margin: 0;
     margin-top: 100px;
-    width: 100%;           /* Ensures full width for centering content */
+    width: 100%;           
 }
 
 /* Add gap between list items */
@@ -28,18 +28,17 @@
     align-items: center;
     padding: 12px 15px;
     cursor: pointer;
-    white-space: normal; /* Changed from 'nowrap' to allow wrapping */
-    overflow: visible;   /* Changed from 'hidden' to show full text */
-    text-overflow: clip; /* Optional: handles overflow gracefully */
-    word-break: break-word; /* Ensures long words break if needed */
+    white-space: normal; 
+    overflow: visible;  
+    text-overflow: clip; 
+    word-break: break-word; 
     margin-bottom: 20px;
-    width: 80%;            /* Limits width for better centering */
+    width: 80%;           
 }
 
-/* Make the image bigger and adjust color */
+
 /* Black icon styling */
-.admin-sidenav li img {
-    filter: brightness(0); /* Makes icon pure black */
+.admin-sidenav ul li img {
     height: 30px;
     width: 30px;
     margin-right: 12px;
