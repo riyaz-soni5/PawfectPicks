@@ -1,6 +1,7 @@
 package com.Pawfect.Controller;
 
 import jakarta.servlet.ServletException;
+
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -8,16 +9,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class loginController
+ * Servlet implementation class LoginPageController
  */
-@WebServlet("/loginController")
-public class loginController extends HttpServlet {
+@WebServlet("/login")
+public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public loginController() {
+    public LoginController() {
         super();
         // TODO Auto-generated constructor stub
     }
