@@ -6,9 +6,9 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 70px; /* give it a fixed height */
     z-index: 1000;
     display: flex;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -43,4 +43,9 @@
     color: #e91e63;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+.logout-link:hover{
+	text-decoration: underline;
 }
