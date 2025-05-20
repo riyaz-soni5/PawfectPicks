@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 30px;
+  text-align: center;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #d9dce1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-btn {
+  background-color: #ec1c45;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.password-field input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  width: 34px;
+  cursor: pointer;
+}
+
+.toggle-password[src="/PawfectPicks/assets/icons/hide-icon.png"]{
+  width: 24px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+

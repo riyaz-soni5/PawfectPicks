@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-container {
+  width: 450px; /* wider */
+  min-height: 450px; /* taller */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #d9dce1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  input[type="email"],
+  input[type="password"], #password {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-btn {
+    background-color: #ec1c45;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .forgot {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ec1c45;
+    text-decoration: none;
+  }
+  
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.password-field input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  width: 34px;
+  cursor: pointer;
+}
+
+.toggle-password[src="/PawfectPicks/assets/icons/hide-icon.png"]{
+  width: 24px;
+}
+
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+ 
+  
