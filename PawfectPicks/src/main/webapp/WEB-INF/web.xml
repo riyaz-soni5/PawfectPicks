@@ -3,7 +3,7 @@
   <display-name>PawfectPicks</display-name>
   <welcome-file-list>
     <welcome-file>Home.html</welcome-file>
-    <welcome-file>Home.jsp</welcome-file>
+    <welcome-file>home.jsp</welcome-file>
     <welcome-file>Home.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
@@ -18,5 +18,6 @@
     <servlet-name>default</servlet-name>
     <url-pattern>/assets/*</url-pattern>
 </servlet-mapping>
+
   
 </web-app>
