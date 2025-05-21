@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+.role-dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  flex-direction: column;
+  width: 180px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.role-dropdown button {
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.role-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+
+.update-role-button{
+	background-color: #92C593; 
+}
+
+button img{
+	
+	width: 20px;
+}
+
+
